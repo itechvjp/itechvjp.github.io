@@ -431,7 +431,7 @@
             var message = $('#message').val();
             $.ajax({
                 type: "POST",
-                url: 'https://questvision.jp/s_sendmail.php',
+                url: '/s_sendmail.php',
                 data: {company:company,position:position,email: email, department:department, name: name, phone: phone, message: message},
                 success: function (data) {
                     console.log(data);
